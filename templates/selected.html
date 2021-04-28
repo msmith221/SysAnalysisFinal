@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+    <header>        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </header>
+	<body>
+		<table border="1" class="table table-striped">
+			<thead>
+				<td>Name</td>
+				<td>First Class Selection</td>
+				<td>Second Class Selection</td>
+			</thead>
+								
+		{% for row in rows %}
+				<tr>
+					<td>{{ row["name"]}}</td>
+					<td>{{ row["classone"] }}</td>
+					<td>{{ row["classtwo"] }}</td>	
+				</tr>
+		{% endfor %}
+        </table>
+
+        <button class="btn-outline-info"><a href="/success/student">DEV: REGISTER AGAIN</a></button><button class="btn-outline-warning"><a href="/">GO back to the home page.</a></button> * <i>This will require you to log back in!</i>
+        </body>
+        </html>

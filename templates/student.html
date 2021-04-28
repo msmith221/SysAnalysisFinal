@@ -1,0 +1,22 @@
+<html>
+    <header>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    </header>
+    <body>
+        <form action="{{ url_for('addrec') }}" method="POST">
+            <h3 class="alert alert-dark">Student Class Selection Portal</h3>
+            <h4 class="alert alert-info">Name</h4>
+            <input type="text" name="nm" /><br />
+            <small id="nameHelp" class="form-text text-muted">Please enter your full name.</small>
+            <h4 class="alert alert-info">Class ID Selection 1</h4>
+            <input type="text" name="firstclass" /><br />
+            <small id="helpBlock1" class="form-text text-muted">Please enter the ID number for your first selected class.</small><br />
+            <h4 class="alert alert-info">Class ID Selection 2</h4>
+            <input type="text" name="secondclass" /><br />
+            <small id="helpBlock2" class="form-text text-muted">Please enter the ID number for your second selected class.</small><br />
+            <input type="submit" class="btn btn-outline-success" value="submit"  />
+            <button class="btn btn-outline-info"><a href="/">Cancel / Logout</a></button>
+        </form>
+    </body>
+</html>

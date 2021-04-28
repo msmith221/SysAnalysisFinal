@@ -1,0 +1,31 @@
+<html>
+    <header>        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </header>
+    <body>
+        <center><img src="https://imgur.com/XI6TbY6.jpg"><br />
+        <h1 class="alert-dark">Welcome Admin!</h1>
+        <br />
+        <div class="alert alert-danger" role="alert">ATTENTION!!!: 2021 registration has begun, bugs and errors may occur.</div>
+        <br />
+        <p class="text-uppercase">Please use the utility buttons below to address issues.</p>
+        <font color="black"><button class="btn btn-warning"><a href="/list">See All Class Registrations</a></button> * <button class="btn btn-dark"><a href="/">Logout</a></button> * <button class="btn btn-danger"><a href="/success/advisor">Advisor View</a></button> * <button class="btn btn-secondary"><a href="/success/student">Student View</a></button></font>
+    </center>
+    <br />
+    <div class="alert alert-dark">
+        <form action="{{ url_for('newstudent') }}" method="POST">
+            <h3 class="alert alert-dark">Student Registration Portal</h3>
+            <h4 class="alert alert-info">Student Name</h4>
+            <input type="text" name="name" /><br />
+            <small id="nameHelp" class="form-text text-muted">Please enter students full name.</small>
+            <h4 class="alert alert-info">Student Major</h4>
+            <input type="text" name="major" /><br />
+            <small id="helpBlock1" class="form-text text-muted">Please enter the students registered major.</small><br />
+            <h4 class="alert alert-info">Student ID</h4>
+            <input type="text" name="studentid" /><br />
+            <small id="helpBlock2" class="form-text text-muted">Please enter the ID number for the new student as seen on their application.</small><br />
+            <input type="submit" class="btn btn-outline-success" value="submit"  />
+            <button class="btn btn-outline-info"><a href="/users">View Student List</a></button>
+        </form>
+    </div>
+</body>
+</html>
