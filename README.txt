@@ -18,4 +18,5 @@ A local school is in need of some new software to allow their students to see av
 
 My solution to this problem was to develop a python application that provides students with their own portion of the application to submit and view available classes. Administrators can view additional information, as well as submit new student users and interact from every view. This application utilizes two different database files and hosts bootstrap styles.
 
+To see a formatted version, please download the .ODT version of this file.
 
